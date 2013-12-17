@@ -1,5 +1,5 @@
 # Symlink to shared application config file
-run "ln -nfs #{config.shared_path}/config/application.ini #{config.release_path}/application/config/application.ini"
+run "ln -nfs #{config.shared_path}/config/application.ini #{config.release_path}/application/configs/application.ini"
 
 # Create & symlink shared cache dir
 run "mkdir -p #{config.shared_path}/cache"
