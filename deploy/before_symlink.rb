@@ -12,4 +12,5 @@ run "ln -nfs #{config.shared_path}/data/uploads #{config.release_path}/data/uplo
 
 # Create & symlink shared public uploads dir
 run "mkdir -p #{config.shared_path}/public/data/icons/uploads"
+run "mkdir -p #{config.shared_path}/public/data/icons/assigned"
 run "ln -nfs #{config.shared_path}/public/data #{config.release_path}/public/data"
