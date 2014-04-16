@@ -19,7 +19,12 @@ autoloadernamespaces[] = Net_
 upload_path = APPLICATION_PATH "/../data/uploads"
 
 editor.languages.en="English"
+editor.languages.da="Danish"
 editor.languages.nl="Dutch"
+editor.languages.fr="French"
+editor.languages.de="German"
+editor.languages.it="Italian"
+editor.languages.sr="Serbian"
 
 ; Concepts and Concept schemes uri configuration
 editor.conceptsBaseUris[] = "http://data.europeana.eu/concept/"
