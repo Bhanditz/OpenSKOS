@@ -18,13 +18,12 @@ autoloadernamespaces[] = Net_
 ; make sure this directory is writable by your webserver!
 upload_path = APPLICATION_PATH "/../data/uploads"
 
-editor.languages.nl="Dutch"
 editor.languages.en="English"
+editor.languages.nl="Dutch"
 
 ; Concepts and Concept schemes uri configuration
-editor.conceptsBaseUris[] = "http://data.beeldengeluid.nl/gtaa/"
-editor.conceptsBaseUris[] = "http://data.beeldengeluid.nl/nongtaa/"
-editor.conceptSchemesDefaultBaseUri="http://data.beeldengeluid.nl/gtaa/"
+editor.conceptsBaseUris[] = "http://data.europeana.eu/concept/"
+editor.conceptSchemesDefaultBaseUri="http://data.europeana.eu/concept/"
 
 ; Concept scheme icons configuration
 editor.schemeIcons.uploadPath="/../public/data/icons/uploads"
@@ -40,7 +39,7 @@ editor.export.filesPath = APPLICATION_PATH "/../public/data/export"
 editor.export.filesHttpPath = "/data/export"
 
 ; Api client configuration
-editor.apiclient.apiurl=http://openskos/api/
+editor.apiclient.apiurl=http://localhost/api/
 
 ; overwrite the homepage by setting this option
 ; make sure there is a script named "index/index.phtml"
@@ -114,10 +113,12 @@ resources.frontController.plugins.rest="Zend_Controller_Plugin_PutHandler"
 ; @extra routes here@
 
 resources.frontController.params.displayExceptions = 0
-resources.locale.default=nl_NL.utf8
+resources.locale.default=en_GB.utf8
 
 resources.view.encoding="UTF-8"
 resources.view.options.doctype=XHTML1_STRICT
+
+phpSettings.date.timezone = "Europe/Amsterdam"
 
 [staging : production]
 
