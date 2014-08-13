@@ -44,7 +44,7 @@ editor.export.filesPath = APPLICATION_PATH "/../public/data/export/"
 editor.export.filesHttpPath = "/data/export/"
 
 ; Api client configuration
-editor.apiclient.apiurl=http://localhost/api/
+editor.apiclient.apiurl=http://skos.europeana.eu/api/
 
 ; overwrite the homepage by setting this option
 ; make sure there is a script named "index/index.phtml"
